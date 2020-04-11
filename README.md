@@ -9,7 +9,7 @@ Say you added files containing information on TN and WA. The following outlines 
 `./climate data_tn.tdv data_wa.tdv`
 
 Example run:
-
+```
  Opening file: data_tn.tdv
  Opening file: data_wa.tdv
  States found: TN WA
@@ -31,9 +31,9 @@ Example run:
  Lightning Strikes: 1190
  Records with Snow Cover: 1383
  Average Cloud Cover: 54.5%
- 
+ ```
  TDV format:
- 
+ ```
  CA» 1428300000000»  9prcjqk3yc80»   93.0»   0.0»100.0»  0.0»95644.0»277.58716
  CA» 1430308800000»  9prc9sgwvw80»   4.0»0.0»100.0»  0.0»99226.0»282.63037
  CA» 1428559200000»  9prrremmdqxb»   61.0»   0.0»0.0»0.0»102112.0»   285.07513
@@ -42,16 +42,16 @@ Example run:
  CA» 1429768800000»  9pr60tz83r2p»   38.0»   0.0»0.0»0.0»101679.0»   283.9342
  CA» 1428127200000»  9prj93myxe80»   98.0»   0.0»100.0»  0.0»102343.0» 285.75
  CA» 1428408000000»  9pr49b49zs7z»   93.0»   0.0»100.0»  0.0»100645.0» 285.82413
- 
+ ```
  Each field is separated by a tab character \t and ends with a newline \n.
  
  Fields:
-      state code (e.g., CA, TX, etc),
-      timestamp (time of observation as a UNIX timestamp),
-      geolocation (geohash string),
-      humidity (0 - 100%),
-      snow (1 = snow present, 0 = no snow),
-      cloud cover (0 - 100%),
-      lightning strikes (1 = lightning strike, 0 = no lightning),
-      pressure (Pa),
-      surface temperature (Kelvin)
+ * state code (e.g., CA, TX, etc),
+ * timestamp (time of observation as a UNIX timestamp),
+ * geolocation (geohash string),
+ * humidity (0 - 100%),
+ * snow (1 = snow present, 0 = no snow),
+ * cloud cover (0 - 100%),
+ * lightning strikes (1 = lightning strike, 0 = no lightning),
+ * pressure (Pa),
+ * surface temperature (Kelvin)
