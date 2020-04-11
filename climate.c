@@ -1,6 +1,5 @@
 /**
  * Evan Carlson
- * 20463800
  *
  * climate.c
  *
